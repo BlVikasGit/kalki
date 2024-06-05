@@ -1,0 +1,17 @@
+<suite name="Suite" parallel="tests">
+ <parameter name="url" value="http://localhost/login.do"/>
+  <test thread-count="5" name="TestA">
+  <parameter name="un" value="admin"/>
+  <parameter name="pwd" value="manager"/>
+    <classes>
+    <class name="datadriven_testing.LearnParameterization"/>
+    </classes>
+  </test> 
+    <test thread-count="5" name="TestB">
+  <parameter name="un" value="Vikas"/>
+  <parameter name="pwd" value="RCB"/>
+    <classes>
+    <class name="datadriven_testing.LearnParameterization"/>
+    </classes>
+  </test>
+</suite> 
